@@ -1,0 +1,60 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: php-config
+data:
+  MYSQL_HOST: "mysql-host"
+  MYSQL_PORT: "3306"
+  REDIS_HOST: "redis-host"
+  REDIS_PORT: "6379"
+  APP_NAME: "OneART"
+  APP_ENV: "local"
+    #  APP_KEY=base64: "SJ20yUXPiOWfeZG+fTXg5orBoyYf46k5khc/4ebSd+g="
+  APP_DEBUG: "true"
+  APP_URL: "http://localhost"
+
+  DB_CONNECTION: "mysql"
+  DB_HOST: "codereddb.mysql.database.azure.com"
+  DB_PORT: '3306'
+  DB_DATABASE: "codered-production-sept2023"
+  DB_USERNAME: "codereddb"
+  DB_PASSWORD: 'A()[[-fJ^r4)xb[Lk>k?r?0mv%lDQ=~\'
+
+  DB_TELESCOPE_HOST: 'codereddb.mysql.database.azure.com'
+  DB_TELESCOPE_PORT: '3306'
+  DB_TELESCOPE_DATABASE: 'codered-production-sept2023'
+  DB_TELESCOPE_USERNAME: 'codereddb'
+  DB_TELESCOPE_PASSWORD: 'A()[[-fJ^r4)xb[Lk>k?r?0mv%lDQ=~\'
+  DB_TELESCOPE_CONNECTION: 'mysql'
+
+  TELESCOPE_ENABLED: 'true'
+
+  BROADCAST_DRIVER: 'log'
+  CACHE_DRIVER: 'redis'
+  QUEUE_CONNECTION: 'redis'
+  SESSION_DRIVER: 'redis'
+  SESSION_LIFETIME: '120'
+
+  REDIS_HOST: 'IntCore.redis.cache.windows.net'
+  REDIS_PASSWORD: 'G75fiUzImk3ZCyaL0AqGbO1kDyGRliAbqAzCaO9eReI='
+  REDIS_PORT: '6379'
+
+  MAIL_MAILER: 'smtp'
+  MAIL_HOST: 'mail.intcore.net'
+  MAIL_PORT: '587'
+  MAIL_USERNAME: 'test2@intcore.net'
+  MAIL_PASSWORD: 'VL![uk)BpSd.'
+  MAIL_ENCRYPTION: 'tls'
+  MAIL_FROM_ADDRESS: 'test2@intcore.net'
+  MAIL_FROM_NAME: 'OneART'
+
+  MAIL_LOG_CHANNEL: null
+
+
+  AZURE_STORAGE_NAME: 'coderedblobdb'         #Storageaccount_Name
+  AZURE_STORAGE_KEY: 'DE7ECoA4y3n4SxbTmZ1rgwh6IEx/psgWHEVgH3WXsgklwRjV4jAsdY1/xlRcJqva4qThZri7263h+ASt2AwvZA==' #Key of storage account
+  AZURE_STORAGE_ENDPOINT: 'https://coderedblobdb.blob.core.windows.net/codered?sp=r&st=2024-01-11T12:20:44Z&se=2024-01-11T20:20:44Z&spr=https&sv=2022-11-02&sr=c&sig=38hw28JLqR6x3bUux70ZvylCAfr76X77SmrEuEDQkcE%3D'#Blob_Storage_URL
+  AZURE_STORAGE_CONTAINER: 'codered'
+  AZURE_STORAGE_CONTAINER_VIDEOS: 'codered'
+  AZURE_STORAGE_URL: 'https://coderedblobdb.blob.core.windows.net/codered?sp=r&st=2024-01-11T12:20:44Z&se=2024-01-11T20:20:44Z&spr=https&sv=2022-11-02&sr=c&sig=38hw28JLqR6x3bUux70ZvylCAfr76X77SmrEuEDQkcE%3D' #Blob_Storage_URL
+

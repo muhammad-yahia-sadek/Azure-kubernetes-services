@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: php-app
+  namespace: default
+spec:
+  containers:
+    - name: php-container
+      image: testin.azurecr.io/codered-backend-app:latest 
+      imagePullPolicy: Always
+  imagePullSecrets:
+    - name: acr-secrets
