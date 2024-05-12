@@ -20,8 +20,8 @@ spec:
             envFrom:
             - configMapRef:
                 name: php-config
-            #          resources:
-            #            limits:
-            #              cpu: 1000m
-            #            requests:
-            #              cpu: 1000m
+                      resources:
+                        limits:
+                          cpu: 1000m
+                        requests:
+                          cpu: 1000m
