@@ -6,7 +6,7 @@ metadata:
 spec:
   containers:
     - name: php-container
-      image: testin.azurecr.io/codered-backend-app:latest 
+      image: testin.azurecr.io/<your_image_app>:latest 
       imagePullPolicy: Always
   imagePullSecrets:
     - name: acr-secrets
