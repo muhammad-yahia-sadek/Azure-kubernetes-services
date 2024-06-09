@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: php-container
-          image: testin.azurecr.io/codered-backend-app
+          image: testin.azurecr.io/<your_image_app>
           ports:
           - containerPort: 80
             envFrom:
